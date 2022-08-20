@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C banking baperBank</title>
+    <!-- tailwindcss link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-3/4 mx-auto mb-6">
+       <h1 class="text-center text-4xl font-semibold mt-3"><span style="color:green;">Let's Get Some</span> Moneey <span style="color: forestgreen;">From</span> Bank</h1>
+    </header>
+    <main  class="w-3/4 mx-auto">
+        <section>
+           <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-400 p-8 rounded-lg"><h1 class="p-8 text-white text-4xl">deposit<br>
+                $<span class="text-5xl"id="total-depo">00</span></h1></div>
+            <div  class="bg-[#86efac] p-8 rounded-lg"><h1 class="text-4xl p-8 text-white">withdraw<br>
+                $<span class="text-5xl"id="total-withdraw">00</span></h1></div>
+            <div  class="bg-yellow-400 p-8"><h1 class=" text-4xl p-8 text-white">balance<br>
+                $<span id="current-balance" class="text-5xl">400</span></h1></div>
+          </div>
+        </section>
+        <section class="mt-6">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-400 p-8 rounded-lg bg-[#fee2e2]">
+                    <h1 class="p-5 text-[#0f172a] text-2xl">Please deposit</h1>
+                    <input class="ml-5 pl-3 mt-0 border-inherit rounded-lg p-2 w-3/4 "id="input-amount" type="text"placeholder="type deposit amount"><br>
+                    <button class="ml-5 py-2 px-3 py-1 mt-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"id="depo-btn">deposit</button>
+                </div>
+                <div class="bg-[#f3e8ff] p-8 rounded-lg bg-[#fee2e2]">
+                    <h1 class="p-5 text-[#0f172a] text-2xl">Please withdraw</h1>
+                    <input class="ml-5 pl-3 rounded-lg p-2 w-3/4 "id="withd-amount" type="text"placeholder="type withdraw amount"><br>
+                    <button class="ml-5 py-2 px-3 py-1 mt-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"id="withd-btn">withdraw</button>
+                </div>
+        </section>
+    </main>
+    <script src="c- banking.js"></script>
+</body>
+</html>
