@@ -33,7 +33,7 @@ document.getElementById("withd-btn").addEventListener("click",function(){
     const totalWithdText = totalWithd.innerText;
     const totalWithdAmount = parseFloat(totalWithdText);
     const totalWithddraw = inputWithd + totalWithdAmount;
-    totalWithd.innerText = totalWithddraw;
+    totalWithd.innerText = totalWithddraw; 
     //c...update current balance
     const balance = document.getElementById("current-balance");
     const balanceText = balance.innerText;
